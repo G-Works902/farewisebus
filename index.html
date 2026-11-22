@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FareWise Bus Privacy Policy / プライバシーポリシー</title>
+<title>Farewise Bus Privacy Policy / プライバシーポリシー</title>
 <style>
   :root { --ink:#1c2530; --accent:#1e50a0; --line:#d4e0ec; --soft:#5a6b7c; }
   * { box-sizing: border-box; }
@@ -44,8 +44,8 @@
 
 <header>
   <div class="inner">
-    <h1>FareWise Bus &mdash; プライバシーポリシー / Privacy Policy</h1>
-    <div class="sub">最終更新 / Last updated: 2026-10-11</div>
+    <h1>Farewise Bus &mdash; プライバシーポリシー / Privacy Policy</h1>
+    <div class="sub">最終更新 / Last updated: 2026-11-22</div>
   </div>
 </header>
 
@@ -56,7 +56,7 @@
 
 <h3>はじめに</h3>
 <p>
-FareWise Bus（以下「本アプリ」）は、G-Works が提供する Windows デスクトップ アプリケーションです。
+Farewise Bus（以下「本アプリ」）は、G-Works が提供する Windows デスクトップ アプリケーションです。
 各地方運輸局長が公示する貸切バスの運賃・料金（公示運賃）に基づいて見積を計算し、運賃計算書を作ります。
 本ポリシーは、本アプリが利用者の情報をどのように扱うかを説明します。
 </p>
@@ -80,9 +80,11 @@ FareWise Bus（以下「本アプリ」）は、G-Works が提供する Windows 
 <ul>
   <li><strong>保存した見積</strong>（見積名、得意先名、備考、行程の時刻・距離、車種、提示額・手数料率・実費などの計算条件）と、テンプレート。
       <code>%LOCALAPPDATA%\FareWiseBus\quotes.db</code> に保存します。得意先名などは利用者が入力したものだけです。</li>
-  <li><strong>設定</strong>（運賃料金適用方の割増率・料率・消費税の扱い、既定の運輸局・車種、選んだ運賃表）。
+  <li><strong>得意先マスター</strong>（得意先名、敬称、手数料率、見積書の備考、社内用のメモ）。利用者が登録したものだけを同じ <code>quotes.db</code> に保存します。</li>
+  <li><strong>設定</strong>（運賃料金適用方の割増率・料率・キャンセル料・消費税の扱い、既定の運輸局・車種、選んだ運賃表、見積書に載せる自社の情報）。
       同じ <code>quotes.db</code> に保存します。</li>
-  <li><strong>運賃計算書</strong>（印刷用の HTML）。<code>%LOCALAPPDATA%\FareWiseBus\reports\</code> に作り、利用者のブラウザーで開きます。</li>
+  <li><strong>運賃計算書・見積書</strong>（印刷用の HTML）。<code>%LOCALAPPDATA%\FareWiseBus\reports\</code> に作り、利用者のブラウザーで開きます。見積書の PDF は、Windows に入っている Microsoft Edge を端末内で動かして作り、利用者が選んだ場所に保存します。</li>
+  <li><strong>バックアップ</strong>。［データをバックアップ］を選んだときだけ、上のデータを利用者が選んだ場所に 1 つのファイルとして保存します。［バックアップから戻す］の前には、それまでのデータを <code>%LOCALAPPDATA%\FareWiseBus\backups\</code> に自動で残します。</li>
   <li><strong>利用者が追加した自社届出運賃</strong>（JSON）。<code>%LOCALAPPDATA%\FareWiseBus\tariff\</code> に、利用者が取り込んだもの・ひな形から作ったものを置いて読み込みます。</li>
   <li><strong>利用者が保存を指示したファイル</strong>（内訳・見積一覧の CSV）。保存先は利用者が選びます。</li>
   <li><strong>クリップボード</strong>。バージョン情報の［情報をコピー］を押したときだけ、
@@ -107,6 +109,14 @@ Microsoft Store 版では、Windows の仕組みにより、上のフォルダ�
 メニューの「貸切バスの運賃・料金制度（国土交通省）を開く」を選んだときだけ、
 利用者のブラウザーが国土交通省のウェブページを開きます。その通信はブラウザーが行い、本アプリの情報は送られません。
 </p>
+<p>
+［ヘルプ］の次の項目も、押したときだけ開きます。起動時に開いたり、勧めたりすることはありません。
+</p>
+<ul>
+  <li>「G-Works のサイト（シリーズのアプリの一覧）」：既定のブラウザーで <code>https://gworks-site.g-works-902.workers.dev/</code> を開きます。</li>
+  <li>「Farewise シリーズのアプリ」：Microsoft Store アプリ（開けないときはブラウザー）で姉妹アプリの製品ページを開きます。アドレスには、このアプリから開いたことを示す目印 <code>cid=farewisebusapp</code> が付きます。Microsoft はこの目印ごとの閲覧数などを集計してパートナー センターで作者に示しますが、個人を特定する情報は作者に渡りません。</li>
+</ul>
+<p>いずれも、こちら（本アプリ・作者）から見積・設定・得意先などのデータを送ることはありません。</p>
 
 <h3>5. 第三者への提供</h3>
 <p>提供する情報がないため、第三者への提供もありません。</p>
@@ -148,7 +158,7 @@ Microsoft Store 版では、Windows の仕組みにより、上のフォルダ�
 
 <h3>Introduction</h3>
 <p>
-FareWise Bus ("the App") is a Windows desktop application published by G-Works.
+Farewise Bus ("the App") is a Windows desktop application published by G-Works.
 It calculates chartered bus quotes based on the fares and charges published by the regional transport bureaus
 of the Japanese Ministry of Land, Infrastructure, Transport and Tourism, and produces a rate statement.
 This policy explains how the App handles your information.
@@ -175,10 +185,13 @@ an external server.
   <li><strong>Saved quotes</strong> (quote title, customer name, notes, daily times and distances, vehicle class,
       offer amount, commission rate, expenses and other calculation conditions) and templates, at
       <code>%LOCALAPPDATA%\FareWiseBus\quotes.db</code>. Customer names are only what you type in.</li>
+  <li><strong>Customer list</strong> (customer names, honorifics, commission rates, estimate notes and internal memos you register), in the same <code>quotes.db</code>.</li>
   <li><strong>Settings</strong> (your own surcharge and cancellation rates, tax handling, default region and vehicle,
-      selected tariff), in the same <code>quotes.db</code>.</li>
-  <li><strong>Rate statements</strong> (printable HTML), created in <code>%LOCALAPPDATA%\FareWiseBus\reports\</code>
-      and opened in your browser.</li>
+      selected tariff, and your company details for estimates), in the same <code>quotes.db</code>.</li>
+  <li><strong>Rate statements and estimates</strong> (printable HTML), created in <code>%LOCALAPPDATA%\FareWiseBus\reports\</code>
+      and opened in your browser. Estimate PDFs are made locally with the Microsoft Edge installed in Windows and saved where you choose.</li>
+  <li><strong>Backups</strong>, only when you choose Back up data (one file, saved where you choose). Before Restore from backup,
+      the current data is kept automatically in <code>%LOCALAPPDATA%\FareWiseBus\backups\</code>.</li>
   <li><strong>Your own filed fare tables you add</strong> (JSON files imported into or created in <code>%LOCALAPPDATA%\FareWiseBus\tariff\</code>).</li>
   <li><strong>Files you ask it to save</strong> (breakdowns and quote lists as CSV). You choose where they go.</li>
   <li><strong>The clipboard</strong>, only when you press Copy information in the About box
@@ -203,6 +216,16 @@ The manual and rate statements are files on your device opened in your browser w
 Only when you choose the menu item that opens the Ministry's materials does your browser open the Ministry's
 web page; that connection is made by your browser and carries no information from the App.
 </p>
+<p>
+The following Help menu items also open only when you click them; the App never opens or recommends them at startup.
+</p>
+<ul>
+  <li>G-Works website (all our apps): opens <code>https://gworks-site.g-works-902.workers.dev/</code> in your default browser.</li>
+  <li>Farewise series apps: opens a sister app's product page in the Microsoft Store app (or in your browser if the Store app is unavailable).
+      The address carries the marker <code>cid=farewisebusapp</code> showing it was opened from this App. Microsoft counts page views per marker
+      and shows the totals to the developer in Partner Center; no personally identifiable information reaches the developer.</li>
+</ul>
+<p>In neither case do we (the App or the developer) send your quotes, settings, customers or any other data.</p>
 
 <h3>5. Sharing with third parties</h3>
 <p>There is no information to share, so nothing is shared.</p>
@@ -238,7 +261,7 @@ We may update this policy as needed. The latest version will be posted at
 <p>For questions about this policy or the App: G.Works.902@gmail.com</p>
 </div>
 
-<footer>&copy; 2026 G-Works &middot; FareWise Bus</footer>
+<footer>&copy; 2026 G-Works &middot; Farewise Bus</footer>
 
 </div>
 </body>
